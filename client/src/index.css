@@ -1,0 +1,190 @@
+:root {
+  /* Bright Mode Palette (Refined) */
+  --bg-dark: #f8faff;
+  /* Very subtle cool white */
+  --bg-card: #ffffff;
+  --primary: #4338ca;
+  /* Indigo 700 - Vivid */
+  --primary-glow: rgba(67, 56, 202, 0.3);
+  --secondary: #be185d;
+  /* Pink 700 */
+  --accent: #7c3aed;
+  /* Violet 600 */
+  --text-main: #0f172a;
+  /* Slate 900 */
+  --text-muted: #475569;
+  /* Slate 600 - darker for contrast */
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(226, 232, 240, 0.8);
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #4f46e5, #db2777);
+
+  /* Spacing & Layout */
+  --max-width: 1280px;
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* Mesh Gradient Background */
+  background-image:
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(34, 211, 238, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  animation: bgPulse 20s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-size: 120% 120%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Center content */
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  /* Slightly larger padding */
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Smoother transition */
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-main);
+  background-size: 200% auto;
+  /* For gradient animation */
+  color: white;
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.btn-primary:hover {
+  background-position: right center;
+  /* Animate gradient */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px var(--primary-glow);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  /* Use primary color for border */
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 15px var(--primary-glow);
+  transform: translateY(-3px);
+}
+
+/* Glassmorphism Cards */
+/* Glassmorphism Cards (Dark Theme on Light Page) */
+/* Glassmorphism Cards (Premium Dark on Light) */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  /* High quality light glass */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.02),
+    0 20px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Bouncy transition */
+  color: var(--text-main);
+}
+
+.glass:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 20px 60px rgba(99, 102, 241, 0.15),
+    /* Indigo Glow */
+    0 0 0 1px rgba(99, 102, 241, 0.2);
+}
+
+.glass p {
+  color: var(--text-muted);
+}
+
+.glass h3,
+.glass h4 {
+  color: var(--text-main);
+  background: linear-gradient(135deg, var(--text-main), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Gradient Text Headers */
+}
+
+/* Titles */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--primary), var(--secondary), var(--primary));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}

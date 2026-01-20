@@ -1,0 +1,95 @@
+.services-section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    padding: 2.5rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.salesforce-bg {
+    background: #00A1E0;
+    /* Salesforce Blue */
+    box-shadow: 0 4px 15px rgba(0, 161, 224, 0.4);
+}
+
+.hubspot-bg {
+    background: #ff7a59;
+    /* HubSpot Orange */
+    box-shadow: 0 4px 15px rgba(255, 122, 89, 0.4);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    flex-grow: 1;
+}
+
+.feature-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
