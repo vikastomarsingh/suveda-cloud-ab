@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
@@ -9,6 +10,7 @@ import CustomCursor from './components/CustomCursor';
 function App() {
   return (
     <Router>
+      <SpeedInsights />
       <div className="app-container">
         <CustomCursor />
         <Navbar />
