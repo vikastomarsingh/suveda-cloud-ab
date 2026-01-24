@@ -6,7 +6,7 @@ import '../styles/Timeline.css';
 const timelineData = [
     { year: "2013", title: "Foundation", desc: "Vedprakash Kushwah founds Suveda Cloud AB as a boutique consultancy." },
     { year: "2016", title: "Salesforce Partnership", desc: "Achieved official Salesforce Consulting Partner status." },
-    { year: "2019", title: "Global Expansion", desc: "Opened offices in London and Singapore to serve global clients." },
+    { year: "2019", title: "Global Expansion", desc: "Established strategic offices in India and Sweden to better serve our international client base." },
     { year: "2021", title: "HubSpot Integration", desc: "Launched dedicated HubSpot division." },
     { year: "2025", title: "Cloud Excellence", desc: "Recognized as Top Cloud Innovator with 50+ certified experts." }
 ];

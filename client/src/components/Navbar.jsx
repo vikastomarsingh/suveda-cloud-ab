@@ -4,6 +4,8 @@ import { Menu, X, Cloud } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Navbar.css';
 
+import logo from '../assets/logo.png';
+
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +21,8 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${scrolled ? 'scrolled glass' : ''}`}>
             <div className="container nav-content">
-                <Link to="/" className="logo">
-                    <Cloud className="logo-icon" size={32} />
-                    <span>Suveda<span className="text-highlight">Cloud</span></span>
+                <Link to="/" className="logo-link">
+                    <img src={logo} alt="Suveda Cloud AB" className="navbar-logo" />
                 </Link>
 
                 {/* Desktop Menu */}

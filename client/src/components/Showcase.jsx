@@ -74,7 +74,9 @@ const Showcase = () => {
                             <h4>Project Challenge & Solution</h4>
                             <p>{selectedProject.details}</p>
                             <div className="modal-actions">
-                                <button className="btn btn-primary">Contact us about this <ExternalLink size={16} /></button>
+                                <a href="#contact" className="btn btn-primary" onClick={() => setSelectedProject(null)}>
+                                    Contact us about this <ExternalLink size={16} />
+                                </a>
                             </div>
                         </div>
                     </div>

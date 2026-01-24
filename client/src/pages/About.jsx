@@ -46,7 +46,7 @@ const About = () => {
                             </p>
                             <p>
                                 By leveraging the power of Salesforce and HubSpot, we bridge the gap between
-                                complex data and actionable insights, driving growth for businesses worldwide.
+                                complex data and actionable insights. <strong>Our entire team is fully certified in Salesforce and HubSpot</strong>, ensuring that you receive world-class expertise and technically sound solutions for every project.
                             </p>
                         </div>
                         <div className="stats-grid">
@@ -93,18 +93,20 @@ const About = () => {
                             <div className="founder-content">
                                 <span className="founder-role">CEO & Founder</span>
                                 <h2>Mr. Vedprakash <span className="gradient-text">Kushwah</span></h2>
+                                <div className="cert-badges">
+                                    <span className="cert-badge">8x Salesforce Certified</span>
+                                    <span className="cert-badge">HubSpot Certified</span>
+                                    <span className="cert-badge">Cloud Architect</span>
+                                    <span className="cert-badge">Agile Master</span>
+                                </div>
                                 <p className="founder-bio">
-                                    With over a decade of experience in cloud architecture and digital transformation,
-                                    Mr. Vedprakash Kushwah founded Suveda Cloud AB with a singular vision: to demystify
-                                    complex cloud technologies for growing businesses.
+                                    A visionary leader in the cloud ecosystem, Mr. Vedprakash Kushwah brings over a decade of hands-on experience in digital transformation. His expertise is validated by <strong>8x Salesforce Certifications</strong> and multiple credentials across various cloud platforms.
                                 </p>
                                 <p>
-                                    Under his leadership, Suveda Cloud AB has grown from a consultancy to a full-service
-                                    cloud partner, helping hundreds of organizations leverage the true potential of Salesforce
-                                    and HubSpot. His philosophy is built on trust, transparency, and technical excellence.
+                                    Mr. Kushwah founded Suveda Cloud AB with a commitment to excellence. He has personally overseen the architecture of complex CRM migrations and implementations for global enterprises. His deep technical knowledge in Salesforce and HubSpot allows him to lead a team that doesn't just deliver software, but delivers business value.
                                 </p>
                                 <div className="founder-quote">
-                                    "We don't just implement software; we engineer growth and stability for your future."
+                                    "True innovation happens when diverse certifications meet real-world problem solving. We build systems that last."
                                 </div>
                             </div>
                         </div>
